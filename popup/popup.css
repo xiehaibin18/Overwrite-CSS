@@ -1,0 +1,10 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+
+#app > div {
+  margin: 2px;
+  padding: 2px;
+}
