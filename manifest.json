@@ -12,6 +12,9 @@
   "action": {
     "default_popup": "popup/popup.html"
   },
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
     {
       "matches": [
@@ -20,7 +23,7 @@
       "js": [
         "inject/index.js"
       ],
-      "run_at": "document_end",
+      "run_at": "document_start",
       "all_frames": true,
       "css": ["inject/index.css"]
     }
